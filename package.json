@@ -1,17 +1,26 @@
 {
   "name": "vue3-layer",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.3",
+  "main": "dist/s3layer.umd.min.js",
+  "author": "legad",
+  "description": "基于 vue3 的Web 通用弹出层组件",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name s3layer src/components/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "jquery": "^3.6.0",
+    "layer-src": "^3.5.1",
+    "nanoid": "^3.1.30"
+  },
+  "peerDependencies": {
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "vue": "^3.0.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
@@ -24,5 +33,10 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0"
-  }
+  },
+  "files": [
+    "dist",
+    "public",
+    "src"
+  ]
 }
