@@ -4,6 +4,7 @@
   "main": "dist/s3layer.umd.min.js",
   "author": "legad",
   "description": "基于 vue3 的Web 通用弹出层组件",
+  "homepage": "https://github.com/liicos/vue3-layer",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
