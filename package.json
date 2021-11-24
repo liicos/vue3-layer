@@ -1,6 +1,6 @@
 {
   "name": "vue3-layer",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "main": "dist/s3layer.umd.min.js",
   "author": "legad",
   "description": "基于 vue3 的Web 通用弹出层组件",
@@ -9,7 +9,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name s3layer src/components/index.js"
+    "lib": "vue-cli-service build --target lib --name s3Layer src/components/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

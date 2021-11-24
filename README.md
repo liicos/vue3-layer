@@ -4,17 +4,16 @@
 [![github](https://img.shields.io/badge/Author-legad-blue.svg)](https://github.com/xaboy)
 [![document](https://img.shields.io/badge/Doc-welcome-red.svg)]()
 
-vue3-layer 是一款基于 layer.js 的 vue3 组件，100%支持 layer.js 的 API
+vue3-layer 是一款基于 layer.js 上层封装的 vue3 组件，100%支持 layer.js 的 API
 
 ## 文档 (Document) 正在建设中...
 
 ## 通过 npm 或者 yarn 安装
 
 ```shell
+# npm
 npm install vue3-layer --save
-```
-
-```shell
+# yarn
 yarn add vue3-layer
 ```
 
