@@ -46,6 +46,7 @@ export default defineComponent({
           attrs.style && layero.css(attrs.style)
 
           createApp(() => slots.default?.()).mount('#' + id)
+          window.dispatchEvent(new Event('resize'))
           emit('success', layero, index)
         },
 
