@@ -33,9 +33,15 @@ export default defineComponent({
         ...attrs
       }
 
+      for (const attr in attrs) {
+        if (attr.substr(0, 5) === 'onBtn') {
+          delete options[attr]
+          options[attr.substr(2).toLowerCase()] = attrs[attr]
+        }
+      }
+
       layerIndex = layer.open({
         ...options,
-        maxmin: true,
         end() {
           emit('update:modelValue', false)
           emit('end', false)
