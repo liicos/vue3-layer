@@ -21,7 +21,7 @@ export default defineComponent({
       default: () => false
     }
   },
-  emits: ['update:modelValue', 'success', 'end', 'moveEnd', 'full', 'min', 'restore'],
+  emits: ['update:modelValue', 'success', 'end', 'moveEnd', 'full', 'min', 'restore', 'resizing'],
   setup(props, { slots, emit, attrs }) {
     let layerIndex
     const init = () => {
@@ -42,6 +42,10 @@ export default defineComponent({
 
       layerIndex = layer.open({
         ...options,
+        resizing(layero) {
+          emit('resizing', layero)
+        },
+
         end() {
           emit('update:modelValue', false)
           emit('end', false)
