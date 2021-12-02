@@ -74,8 +74,7 @@ export default defineComponent({
 
         cancel: function (index, layero) {
           if (attrs.onCancel && typeof attrs.onCancel === 'function') {
-            attrs.onCancel(index, layero)
-            return false
+            return attrs.onCancel(index, layero)
           }
         },
 
