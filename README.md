@@ -2,7 +2,7 @@
 
 [![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/liicos/vue3-layer)
 [![github](https://img.shields.io/badge/Author-legad-blue.svg)](https://github.com/liicos)
-[![document](https://img.shields.io/badge/Doc-welcome-red.svg)]()
+[![document](https://img.shields.io/badge/Doc-welcome-red.svg)](http://vue-layer.then66.top)
 
 vue3-layer 是一款基于 layer.js 上层封装的 vue3 组件，100%支持 layer.js 的 API
 
