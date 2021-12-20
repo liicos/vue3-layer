@@ -15,6 +15,6 @@ npm install vue3-layer --save
 yarn add vue3-layer
 ```
 
-## [示例（Example）](http://vue-layer.then66.top/guide/start.html)
+## [示例 (Example)](http://vue-layer.then66.top/guide/start.html)
 
 ## [文档 (Document)](http://vue-layer.then66.top)
