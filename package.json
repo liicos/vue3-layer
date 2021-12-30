@@ -1,9 +1,17 @@
 {
   "name": "vue3-layer",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "main": "dist/s3Layer.umd.min.js",
   "author": "legad",
   "description": "基于 vue3 的Web 通用弹出层组件",
+  "keywords": [
+    "vue-layer",
+    "vue-modal",
+    "vue-dialog",
+    "vue3-modal",
+    "vue3-dialog",
+    "vue3-layer"
+  ],
   "homepage": "https://github.com/liicos/vue3-layer",
   "scripts": {
     "serve": "vue-cli-service serve",
