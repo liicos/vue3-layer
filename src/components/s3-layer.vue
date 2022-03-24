@@ -9,7 +9,6 @@ import { createApp, onMounted, defineComponent, watch } from 'vue'
 import { customAlphabet } from 'nanoid'
 
 window.$ = window.jQuery = $
-const layer = require('layer-src')
 
 export default defineComponent({
   name: 's3-layer',
@@ -23,6 +22,7 @@ export default defineComponent({
   },
   emits: ['update:modelValue', 'success', 'end', 'moveEnd', 'full', 'min', 'restore', 'resizing'],
   setup(props, { slots, emit, attrs }) {
+    const layer = window.layer
     let layerIndex
     const init = () => {
       const nanoid = customAlphabet('abcdefghijklmn', 10)

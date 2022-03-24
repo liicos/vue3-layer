@@ -1,6 +1,6 @@
 {
   "name": "vue3-layer",
-  "version": "1.0.16",
+  "version": "1.0.18",
   "main": "dist/s3Layer.umd.min.js",
   "author": "legad",
   "description": "基于 vue3 的Web 通用弹出层组件",
