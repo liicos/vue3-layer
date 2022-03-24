@@ -1,2 +1,2 @@
-declare const s3Layer: import('vue').DefineComponent<any>
-export default s3Layer
+export const s3Layer: import('vue').DefineComponent<any>
+export const layer:any
