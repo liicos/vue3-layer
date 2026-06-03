@@ -1,24 +1,63 @@
-# Vue3-Layer 弹出层
+# Vue3 Layer
 
-[![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/liicos/vue3-layer)
-[![github](https://img.shields.io/badge/Author-legad-blue.svg)](https://github.com/liicos)
-[![document](https://img.shields.io/badge/Doc-welcome-red.svg)](http://vue-layer.then66.top)
+Vue3 Layer is a Vue 3 wrapper around [layui layer](https://layui.dev/docs/2/layer/). It keeps the native `layer` API available and adds a Vue component for rendering slot content inside `layer.open()`.
 
-vue3-layer 是一款基于 layer.js 上层封装的 vue3 组件，100%支持 layer.js 的 API
+## Install
 
-## 为什么写这个组件
-
-如果你对 layer.js 的 UI 风格足够熟悉，你会发现国内使用 layer.js 的网站非常之多，然而基于 jQuery 的它并不能很好的适配 MVVM 的开发模式，开发这个组件的目的就是为了让大家在 Vue 中也能方便的使用这个多功能弹出层 ~
-
-## 通过 npm 或者 yarn 安装
-
-```shell
-# npm
-npm install vue3-layer --save
-# yarn
-yarn add vue3-layer
+```sh
+npm install vue3-layer
 ```
 
-## [示例 (Example)](http://vue-layer.then66.top/guide/start.html)
+Vue is a peer dependency:
 
-## [文档 (Document)](http://vue-layer.then66.top)
+```sh
+npm install vue@^3.5.35
+```
+
+## Component Usage
+
+```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+import { S3Layer } from 'vue3-layer'
+
+const visible = ref(false)
+</script>
+
+<template>
+  <button type="button" @click="visible = true">Open</button>
+
+  <S3Layer v-model="visible" :options="{ title: 'Title', area: ['520px', '320px'] }">
+    <div>Vue slot content</div>
+  </S3Layer>
+</template>
+```
+
+## Native Layer API
+
+```ts
+import { layer } from 'vue3-layer'
+
+layer.alert('Message')
+layer.confirm('Continue?')
+layer.msg('Saved')
+```
+
+## Scripts
+
+```sh
+npm run dev
+npm run build
+npm run typecheck
+npm run lint
+npm run docs:dev
+npm run docs:build
+```
+
+## Documentation
+
+The local docs are powered by VitePress:
+
+```sh
+npm run docs:dev
+```

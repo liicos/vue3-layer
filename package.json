@@ -1,52 +1,73 @@
 {
   "name": "vue3-layer",
-  "version": "1.0.18",
-  "main": "dist/s3Layer.umd.min.js",
+  "version": "2.0.0",
+  "description": "基于 Vue 3 和 layui layer 的 Web 通用弹出层组件",
   "author": "legad",
-  "description": "基于 vue3 的Web 通用弹出层组件",
   "keywords": [
     "vue-layer",
     "vue-modal",
     "vue-dialog",
     "vue3-modal",
     "vue3-dialog",
-    "vue3-layer"
+    "vue3-layer",
+    "layui",
+    "layer"
   ],
   "homepage": "https://github.com/liicos/vue3-layer",
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name s3Layer src/components/index.js"
-  },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "jquery": "^3.6.0",
-    "layer-src": "^3.5.1",
-    "nanoid": "^3.1.30"
-  },
-  "peerDependencies": {
-    "vue": "^3.0.0"
-  },
-  "devDependencies": {
-    "vue": "^3.0.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/eslint-config-standard": "^5.1.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^7.0.0"
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/vue3-layer.umd.cjs",
+  "module": "dist/vue3-layer.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue3-layer.js",
+      "require": "./dist/vue3-layer.umd.cjs"
+    },
+    "./style.css": "./dist/vue3-layer.css",
+    "./vue3-layer.css": "./dist/vue3-layer.css"
   },
   "files": [
-    "dist",
-    "public",
-    "src"
+    "dist"
   ],
-  "types": "src/vue3-layer.d.ts"
+  "sideEffects": [
+    "**/*.css",
+    "**/*.vue"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -p tsconfig.build.json --noEmit && vite build",
+    "typecheck": "vue-tsc -p tsconfig.build.json --noEmit",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "layui": "^2.13.7"
+  },
+  "peerDependencies": {
+    "vue": ">=3.5.0 <4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.10.1",
+    "@types/layui": "^2.13.0",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/test-utils": "^2.4.10",
+    "eslint": "^10.4.1",
+    "eslint-plugin-vue": "^10.9.1",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.1",
+    "vite": "^8.0.16",
+    "vite-plugin-dts": "^5.0.2",
+    "vitepress": "^1.6.4",
+    "vitest": "^4.1.8",
+    "vue": "^3.5.35",
+    "vue-tsc": "^3.3.3"
+  }
 }

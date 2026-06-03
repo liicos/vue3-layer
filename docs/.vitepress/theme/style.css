@@ -1,0 +1,149 @@
+:root {
+  color-scheme: light;
+  --vp-c-brand-1: #e76f51;
+  --vp-c-brand-2: #ee8267;
+  --vp-c-brand-3: #d95f43;
+  --vp-c-brand-soft: #fadfd9;
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #fafafa;
+  --vp-c-bg-soft: #fff6f3;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-text-1: #1f2933;
+  --vp-c-text-2: #4b5563;
+  --vp-c-text-3: #6b7280;
+  --vp-c-divider: #ead8d2;
+  --vp-code-color: #b94f37;
+  --vp-code-bg: #fff0eb;
+  --vp-button-brand-bg: #e76f51;
+  --vp-button-brand-hover-bg: #d95f43;
+  --vp-button-brand-active-bg: #c95035;
+  --vp-button-brand-text: #ffffff;
+  --vp-home-hero-name-color: #e76f51;
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #fadfd9 0%, #ffe9de 100%);
+  --vp-home-hero-image-filter: blur(56px);
+}
+
+.dark {
+  color-scheme: light;
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #fafafa;
+  --vp-c-bg-soft: #fff6f3;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-text-1: #1f2933;
+  --vp-c-text-2: #4b5563;
+  --vp-c-text-3: #6b7280;
+  --vp-c-divider: #ead8d2;
+  --vp-code-color: #b94f37;
+  --vp-code-bg: #fff0eb;
+}
+
+html,
+body {
+  background: #ffffff;
+}
+
+.VPNav,
+.VPNavBar,
+.VPNavBar.has-sidebar .content,
+.VPLocalNav,
+.VPSidebar {
+  background: #ffffff !important;
+}
+
+.VPNavBarTitle .title {
+  color: #263238;
+  font-weight: 700;
+}
+
+.VPNavBarAppearance,
+.VPSwitchAppearance {
+  display: none !important;
+}
+
+.VPContent {
+  background: #ffffff;
+}
+
+.VPDoc h1,
+.VPDoc h2,
+.VPDoc h3 {
+  color: #1f2933;
+}
+
+.VPDoc p,
+.VPDoc li,
+.VPDoc td {
+  color: #374151;
+}
+
+.VPDoc table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.VPDoc tr:nth-child(2n) {
+  background: #fff7f4;
+}
+
+.VPDoc th {
+  color: #334155;
+  background: #fff1ec;
+}
+
+.VPDoc th,
+.VPDoc td {
+  border-color: #ead8d2;
+}
+
+.VPDoc code {
+  color: #b94f37;
+  background: #fff0eb;
+}
+
+.VPDoc div[class*='language-'] {
+  background: #1f2933;
+}
+
+.VPDoc div[class*='language-'] code {
+  color: #e5e7eb;
+  background: transparent;
+}
+
+.VPButton.brand {
+  border-color: #e76f51;
+  background-color: #e76f51;
+}
+
+.VPButton.brand:hover {
+  border-color: #d95f43;
+  background-color: #d95f43;
+}
+
+.VPButton.alt {
+  color: #b94f37;
+  background-color: #fff0eb;
+}
+
+.layer-demo,
+.demo-box,
+.event-demo,
+.native-demo {
+  border-color: #ead8d2;
+  background: #fff8f5;
+}
+
+.layer-demo button,
+.demo-box button,
+.event-demo button,
+.native-demo button {
+  border-color: #e76f51;
+  background: #e76f51;
+}
+
+.layer-demo button:hover,
+.demo-box button:hover,
+.event-demo button:hover,
+.native-demo button:hover {
+  background: #d95f43;
+}
