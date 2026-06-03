@@ -14,6 +14,10 @@
   --vp-c-divider: #ead8d2;
   --vp-code-color: #b94f37;
   --vp-code-bg: #fff0eb;
+  --vp-code-block-bg: #fff8f5;
+  --vp-code-block-divider-color: #ead8d2;
+  --vp-code-line-highlight-color: #ffe9de;
+  --vp-code-line-number-color: #9ca3af;
   --vp-button-brand-bg: #e76f51;
   --vp-button-brand-hover-bg: #d95f43;
   --vp-button-brand-active-bg: #c95035;
@@ -35,6 +39,10 @@
   --vp-c-divider: #ead8d2;
   --vp-code-color: #b94f37;
   --vp-code-bg: #fff0eb;
+  --vp-code-block-bg: #fff8f5;
+  --vp-code-block-divider-color: #ead8d2;
+  --vp-code-line-highlight-color: #ffe9de;
+  --vp-code-line-number-color: #9ca3af;
 }
 
 html,
@@ -102,12 +110,35 @@ body {
 }
 
 .VPDoc div[class*='language-'] {
-  background: #1f2933;
+  border: 1px solid #ead8d2;
+  background: #fff8f5;
 }
 
 .VPDoc div[class*='language-'] code {
-  color: #e5e7eb;
+  color: #263238;
   background: transparent;
+}
+
+.VPDoc div[class*='language-'] pre,
+.VPDoc div[class*='language-'] span {
+  color: #263238;
+}
+
+.VPDoc div[class*='language-'] .line {
+  color: #263238;
+}
+
+.VPDoc div[class*='language-'] .line span {
+  color: var(--shiki-light, #263238) !important;
+}
+
+.VPDoc div[class*='language-'] .line span[style*='--shiki-dark'] {
+  color: var(--shiki-light, #263238) !important;
+}
+
+.VPDoc .copy {
+  border-color: #ead8d2;
+  background-color: #fff0eb;
 }
 
 .VPButton.brand {
